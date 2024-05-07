@@ -80,7 +80,7 @@ export default function ProductsSlider() {
         // when window width is <= 640px
         640: {
           slidesPerView: 1,
-          spaceBetween: 20
+          spaceBetween: 800
         },
         // when window width is <= 768px
         768: {
@@ -96,11 +96,11 @@ export default function ProductsSlider() {
       className='swiper' 
     >
       {data.map((product) => (
-        <SwiperSlide key={product.id} className='rounded-lg swiper-slide'> 
-          <div className='w-[400px] p-4 rounded-lg text-start flex flex-col gap-5'>
+        <SwiperSlide key={product.id} className='rounded-lg swiper-slide w-full'> 
+          <div className='md:w-[400px] w-full p-4 rounded-lg text-start flex flex-col gap-5'>
             <img className='h-[200px] w-full object-cover rounded-lg' src={product.image} alt="" />
             <div>
-              <h1 className='text-2xl font-bold text-secondary'>{product.name}</h1>
+              <h1 className='md:text-2xl  font-bold text-secondary'>{product.name}</h1>
               <p className='text-sm'>{product.description}</p>
             </div>
           </div>

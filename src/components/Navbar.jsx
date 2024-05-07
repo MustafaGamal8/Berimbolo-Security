@@ -69,7 +69,7 @@ const Navbar = () => {
 
   return (
     <nav className={` ${isScrolled ? "fixed top-0 left-0 w-full bgtrans animate__slideInDown animate__faster animate__animated  ":""} z-[2]`}>
-      <div className=" relative  w-full  mx-auto px-4 sm:px-6 lg:px-8 h-20">
+      <div className=" relative  w-full  mx-auto lg:px-8 h-20">
         <div className={`flex justify-around items-center h-full `}>
           {/* Logo */}
           <div className="flex-shrink-0 h-full">
@@ -131,14 +131,14 @@ const Navbar = () => {
         </div>
       )}
       {isMenuOpen && (
-        <div ref={menuRef} className="absolute top-0 left-0 bgtrans h-20 w-full flex px-2 items-center justify-between animate__fadeInDown animate__animated">
-          <div className="flex ">
+        <div ref={menuRef} className="absolute top-0 left-0 bgtrans h-20 w-full flex  items-center justify-center animate__fadeInDown animate__animated">
+          <div className="flex items-center justify-center  ">
               {/* Map over the navLinks array to create navigation items */}
               {navLinks.map((link) => (
                 <a
                   key={link.title}
                   href={link.href}
-                  className="text-dark group  px-3 py-2 rounded-md text-xs text-nowrap font-medium flex items-center gap-1  transition-all"
+                  className="text-dark group text-center py-2 rounded-md text-xs text-nowrap font-medium flex items-center gap-1  transition-all"
                 >
                   <div className="bg-primary rounded-full w-2 group-hover:h-2  transition-all  "></div>
                   {link.title}
