@@ -103,7 +103,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu Button */}
-          <div onClick={handleMenuClick} className="text-dark cursor-pointer text-2xl">
+          <div onClick={handleMenuClick} className="text-dark cursor-pointer text-2xl md:hidden ">
             <RiMenu2Line />
           </div>
         </div>
