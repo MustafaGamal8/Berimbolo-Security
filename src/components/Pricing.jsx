@@ -45,7 +45,7 @@ export default function Pricing() {
 
   return (
     <div id="pricing" className="container mx-auto py-8 mt-20">
-      <h2 className="text-5xl font-bold mb-8 text-center">Our Princing</h2>
+      <h2 className="text-5xl font-bold mb-8 text-center">Our Pricing</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-5   shadow">
         {products.map((product, index) => (
           <ProductItem key={index} {...product} />
